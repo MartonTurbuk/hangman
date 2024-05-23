@@ -1,0 +1,30 @@
+<!-- src/app/game/game.component.html -->
+<div class="game-container">
+  <h1>Hangman Game</h1>
+  <div class="word-length">
+    <p>The word has {{ word.length }} letters:</p>
+    <p>{{ wordLengthDisplay }}</p>
+  </div>
+  <div class="controls">
+    <input type="text" maxlength="1" [(ngModel)]="currentGuess" (keyup.enter)="makeGuess()" />
+    <button (click)="makeGuess()">Guess</button>
+  </div>
+  <div class="used-letters">
+    <p>Correct guesses:</p>
+    <span *ngFor="let letter of usedLetters" [appLetterHighlight]="true">{{ letter }}</span>
+  </div>
+  <div class="wrong-guesses">
+    <p>Wrong guesses:</p>
+    <span *ngFor="let letter of wrongGuesses" [appLetterHighlight]="false">{{ letter }}</span>
+  </div>
+  <div class="remaining-guesses">
+    <p>Remaining guesses: {{ remainingGuesses }}</p>
+  </div>
+  <div *ngIf="gameStatus">
+    <p>{{ gameStatus }}</p>
+    <button (click)="initializeGame()">Play Again</button>
+  </div>
+  <div *ngIf="showToaster" class="toaster">
+    <p>{{ toasterMessage }}</p>
+  </div>
+</div>

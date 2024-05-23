@@ -1,0 +1,7 @@
+[
+  "angular", "typescript", "component", "directive", "module", "service", "dependency", "injection", "template", "reactive",
+  "forms", "binding", "pipes", "decorator", "metadata", "router", "route", "guard", "resolver", "state",
+  "management", "redux", "store", "action", "effect", "selector", "observable", "subject", "behavior", "replay",
+  "async", "await", "promise", "callback", "http", "interceptor", "backend", "frontend", "fullstack", "developer",
+  "javascript", "html", "css", "bootstrap", "sass", "less", "webpack", "babel", "node", "express"
+]
