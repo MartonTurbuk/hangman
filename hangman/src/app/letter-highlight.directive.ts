@@ -1,4 +1,3 @@
-// src/app/letter-highlight.directive.ts
 import { Directive, ElementRef, Input, OnChanges, Renderer2 } from '@angular/core';
 
 @Directive({
